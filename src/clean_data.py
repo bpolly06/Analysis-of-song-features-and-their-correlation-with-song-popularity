@@ -10,11 +10,6 @@ if project_root not in sys.path:
 print("Project root added to sys.path:", project_root)
 print("Current working directory:", os.getcwd())
 
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 try:
     from src.load_data import load_raw_data
 except ModuleNotFoundError as e:
