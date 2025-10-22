@@ -37,7 +37,7 @@ def correlation_analysis():
     # Save to CSV for Tableau
     output_path = os.path.join(project_root, "data/spearman_correlation_results.csv")
     results_df.to_csv(output_path, index=False)
-    print(f"\n✅ Spearman correlation results saved to: {output_path}")
+    print(f"\n Spearman correlation results saved to: {output_path}")
 
 if __name__ == "__main__":
     correlation_analysis()

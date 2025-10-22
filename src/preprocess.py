@@ -45,5 +45,5 @@ def preprocessing():
     os.makedirs(os.path.dirname(features_path), exist_ok=True)
     features_df.to_csv(features_path, index=False)
     
-    print(f"✅ Feature data saved to: {features_path}")
+    print(f"Feature data saved to: {features_path}")
     return features_df
