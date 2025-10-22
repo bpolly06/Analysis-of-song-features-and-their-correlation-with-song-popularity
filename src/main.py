@@ -5,12 +5,14 @@ from src.analysis import correlation_analysis
 
 
 def main():
-    print("🎵 Starting Spotify Data Pipeline...")
+    
+    # Running the full pipeline
+    print("Starting Spotify Data Pipeline")
     df_raw = load_raw_data()
     df_clean = clean_raw_data()
     df_preprocessed = preprocessing()
     df_analysis = correlation_analysis()
-    print("✅ Pipeline complete!")
+    print("Pipeline complete!")
 
 if __name__ == "__main__":
     main()

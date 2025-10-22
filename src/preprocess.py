@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 def preprocessing():
+
     # Paths
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     clean_path = os.path.join(project_root, "data/cleaned_spotify_data.csv")
@@ -30,7 +31,7 @@ def preprocessing():
     encoded_cats = encoder.fit_transform(df[categorical_features])
     cat_feature_names = encoder.get_feature_names_out(categorical_features)
 
-    # Binary + target
+    # Combining Binary and target
     binary_and_target = df[binary_features + target_feature].to_numpy()
 
     # Combine everything
